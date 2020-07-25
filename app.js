@@ -20,6 +20,7 @@ mongoose.connect(dbURI, { useNewUrlParser: true , useUnifiedTopology: true})
             console.log("Connected to database");
     })
     .catch((err)=> console.log(err));
+ 
 
 // var bodyParser =  require('body-parser');
 // var movies = require('./public/movies');
