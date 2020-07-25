@@ -1,0 +1,16 @@
+Work to do:
+
+1. Autofill only movie in the list/database?   link by shivam       Completed
+2. What if movie input is not in database? movienotfound            
+3. Add like,dont like, dont know buttons
+4. Change frontend
+
+
+<!-- <% if(movieList) { %>
+				<% movieList.forEach(element=>{ %>
+						<!-- var ele = <%=element%>  -->
+					<!--<option value= <%=element%>>
+				<% }) %>
+			<% } %> -->
+
+<!-- <option value= <%movieList%> > -->

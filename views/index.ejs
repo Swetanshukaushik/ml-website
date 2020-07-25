@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Movie Suggestions</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<style type="text/css"></style>
+	<!-- for autocomplete forms:-> -->
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">	
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="box-1">
+		<h1> MOVIE SUGGESTIONS</h1>
+		</div>
+
+		<!-- <h1>Want Suggestions for movies? </h1> -->
+		<p>Tell me your 3 Favorite movie and lets see what do i have in store for you...</p>	
+	
+		<% if(errToDisplay ){ %>
+		 <h2> <%=errToDisplay %></h2> 
+		<% } %>
+
+		<!-- <form class="my-form"> -->
+		<form id="movie-form" method="POST" action= "/submit-movies">
+
+		<div class="form-group">
+		<label>  Movie 1 </label>
+		<input list="movie1" type="text" id="searchmovie1" name="movie1" autocomplete="off">
+		<datalist id="movie1">
+			<% if(movieList.length >0) { %>
+				<% movieList.forEach(element=>{ %>
+					<option id=<%= element %>>
+						<%= element%></option>
+				<% }) %>
+			<% } %>
+		</datalist>
+		</div>
+		<p></p>
+
+		<div class="form-group">
+			<label> Movie 2 </label>
+			<input  list="movie2" type="text" id="searchmovie2" name="movie2" autocomplete="off">
+			<datalist id="movie2">
+				<% if(movieList.length >0) { %>
+				<% movieList.forEach(element=>{ %>
+					<option id=<%= element %>>
+						<%= element%></option>
+				<% }) %>
+			<% } %>
+			</datalist>
+		</div>
+		<p></p>
+
+		<div class="form-group">
+			<label> Movie 3 </label>
+			<input list = "movie3" type="text" id="searchmovie3" name="movie3" autocomplete="off">
+			<datalist id="movie3">
+				<% if(movieList.length >0) { %>
+				<% movieList.forEach(element=>{ %>
+					<option id=<%= element %>>
+						<%= element%></option>
+				<% }) %>
+			<% } %>
+			</datalist>
+		</div>
+		<!-- <input class="button" type="submit" name="Submit" name=""> -->
+		<p></p>
+		<button>Submit</button>
+		</form>
+
+		<h2> </h2>
+
+		<nav>
+			<a href="/">Homepage</a>
+			<h2></h2>
+			<a href="/about" >About Us</a>
+			<h2></h2>
+			<a href = "/fetchData">Fetch all Data</a>
+			<h2></h2>
+		</nav>
+		<!-- Autocomplete Script -->
+		<!-- <script>
+			$(function(){
+				$('#searchmovie1').autocomplete({
+					source: function(req, res){
+						$.ajax({
+							url: "/autocomplete/",
+							dataType: "jsonp",
+							type: "GET",
+							data: req,
+							success: function(data){
+								console.log(data);
+								res(data);
+							},
+							error: function(err){
+								console.log(err);
+							}
+						});
+					},
+					minLength: 1,
+					select: function(event, ui){
+						if(ui.item){
+							$('#searchmovie1').text(ui.item.label);
+						}
+					}
+				})
+			})
+		</script> -->
+	</div> 	
+	<div style ="margin-top: 500px;"></div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

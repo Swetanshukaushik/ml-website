@@ -1,0 +1,156 @@
+/*
+*{
+	margin:0;
+	padding: 0;
+}
+*/
+
+body{
+	background-color: #f4f4f4;
+	color: rgb(210,30,40);
+	font-family: Arial,HElvetics,sans-serif;
+	font-weight: bold;
+	font-size: 18px;
+
+	/* Same as above*/
+	font: bold 18px Aerial,Helvetica,sans-serif;
+	line-height: 1em;
+	margin:0;
+}
+
+a{
+	text-decoration: none;
+	color: #000;
+}
+a:hover{
+	color:blue;
+}
+a:active{
+	color: red;
+}
+a:visited{
+	color:green;
+}
+
+.container{
+	width: 90%; 
+	margin:auto;
+}
+.button{
+	background-color: #333;
+	color: #fff;
+	border:none;
+	padding: 10px;
+}
+.button:hover{
+	background:red;
+	color:white;
+}
+.clr{
+	clear:both;
+}
+.box-1{
+	background-color: black; 
+	color:#fff;
+	border-top: : 5px red solid;
+	border-right: : 5px red solid;
+	border-bottom: : 5px red solid;
+	border-left: 5px red solid;
+	/*same as above*/
+	border: 5px red solid;
+
+	border-width: 3px;
+	border-bottom-width: 10px;
+	border-top-style: dotted;
+
+	padding-top: 20px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+	padding-left: 20px;
+
+	/*Same as above*/
+	padding: 20px;
+
+	margin-top: 20px;
+	margin-right: : 20px;
+	margin-bottom: : 20px;
+	margin-left: 20px;
+	margin: 20px; /*same as above*/
+}
+
+.box-1 h1{
+	font-family: Tahoma;
+	font-weight: 200;
+	font-style: italic;
+	text-decoration: underline;
+	text-transform: uppercase;
+	letter-spacing: 0.2 em;
+	word-spacing: 1 em;
+}
+.box-2{
+	border : 20px solid #ccc;
+	padding:20px ;
+	margin:20px 0;
+}
+
+.categories{
+	border:1px #ccc solid;
+	padding: :10px;
+	border-radius: :15px; /*rounded corners of boxes*/
+}
+.categories h2{
+	color: rgb(0,0,250);
+	text-align: center;
+}
+.categories ul{
+	padding: 0;
+	padding-left: 40px;
+	list-style: square;
+	list-style: none;
+}
+.categories li{
+	padding: 6px;
+	border-bottom: dotted 1px #333;
+	list-style-image: url(../download.jpg);
+}
+.my-form .form-group{
+	padding-bottom: 15px;
+}
+.my-form label{
+	display: block;
+}
+.my-form input[type="text"], .my-form textarea{
+	padding: 10px;
+	width: 90%;
+}
+.block{
+	float:left;
+	width: 33.3%;
+	border: 1px solid #ccc;
+	padding:10px;
+	box-sizing: border-box;
+}
+
+#main-block{
+	float: left;
+	width: 70%;
+	padding: 15px;
+	box-sizing: border-box;
+}
+#side-bar{
+	float: right;
+	width : 30%;
+	background-color: #333;
+	color:#fff;
+	padding: 15px;
+	box-sizing: border-box;
+}
+
+
+
+
+
+
+
+
+

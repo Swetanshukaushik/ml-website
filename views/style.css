@@ -1,0 +1,115 @@
+body{
+	background-color:black;
+	color: rgb(210,30,40);
+	font-family: Arial,HElvetics,sans-serif;
+	font-weight: bold;
+	font-size: 18px;
+	text-align: center;
+	/* Same as above*/
+	font: bold 18px Aerial,Helvetica,sans-serif;
+	line-height: 1em;
+	margin:0;
+}
+
+a{
+	text-decoration: none;
+	color: green;
+}
+a:hover{
+	color:blue;
+}
+a:active{
+	color: red;
+}
+/* a:visited{
+	color:green;
+} */
+
+.container{
+	width: 90%; 
+	margin:auto;
+	text-align: center;
+}
+.h2{
+	color: red;
+}
+.button{
+	background-color: green;
+	color: black;
+	border-style: dashed;
+	padding: 10px;
+}
+.button:hover{
+	background:red;
+	color:white;
+}
+.clr{
+	clear:both;
+}
+.box-1{
+	background-color: black; 
+	color:silver;
+	
+	border : 10px solid #ccc;
+	padding:10px ;
+	margin:10px 0;
+	text-align: center;
+}
+.box-2{
+	background-color: black; 
+	color:silver;
+	
+	border : 10px solid #ccc;
+	border-radius: 5CM;
+	border-spacing: 4cm;
+	border-width: 0.25cm;
+	
+	padding:10px ;
+	margin:40px 0;
+	text-align: center;
+}
+
+.box-1 h1{
+	font-family: Arial;
+	font-weight: 200;
+	text-decoration: underline;
+	/* text-transform: uppercase; */
+	letter-spacing: 0.4 em;
+	word-spacing: 1.5 em;
+	text-align: center;
+}
+.categories{
+	border:1px #ccc solid;
+	padding :10px;
+	border-radius :15px; /*rounded corners of boxes*/
+	text-align: center;
+}
+.categories h2{
+	color: rgb(0,0,250);
+	text-align: center;
+}
+.my-form .form-group{
+	padding-bottom: 15px;
+	
+}
+.my-form label{
+	display: block;
+	size: 10;
+}
+.my-form input[type="text"], .my-form textarea{
+	padding: 10px;
+	width: 90%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

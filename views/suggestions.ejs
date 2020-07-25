@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Movie Suggestions</title>
+	<link rel="stylesheet" type="text/css" href="styleDisplay.css">
+	<style type="text/css"> 
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="box-2">
+		<h1>Suggested Movies</h1>
+		</div>
+
+		<!-- <% var count = 1%>
+		<% if(arrayToSend.length >0) { %>
+			<% arrayToSend.forEach(element=>{ %>
+				<h2>Suggestion <%=count%> : <%=element%> </h2>
+				<%count++; %>
+			<% }) %>
+		<% } %> -->
+		
+		
+		<div class="moviedisplay"> 
+			<h1 id="movieDisplay"><%=arrayToSend[0]%></h1>
+		</div>
+
+		<div class="thank">
+			<h2 id="blank"></h2>
+		</div>
+		
+		
+		<button class="button2" id="prev" type="button" onclick="prev()">Prev</button>
+		<button class="button2" id="next" type="button" onclick="next()">Next</button>
+		<p> </p>
+
+		<button class="button" id="like" type="button" onclick="next()">Like it</button>
+		<button class="button" id="dislike" type="button" onclick="next()">Dislike</button> 
+		<button class="button" id="cantsay" type="button" onclick="next()">Can't Say</button> 
+
+		<script type="text/javascript">
+		var count=0;
+		var arr=('<%=arrayToSend%>').split(",");
+			function next(){
+				if(arr.length>count+1){
+					count++;
+					document.getElementById("movieDisplay").innerHTML = arr[count];
+				}else{
+					document.getElementById("blank").innerHTML = "Thank You For Visiting Us";
+					document.getElementById("like").style.visibility="hidden";
+					document.getElementById("dislike").style.visibility="hidden";
+					document.getElementById("cantsay").style.visibility="hidden";
+
+				}
+			}
+			function prev(){
+				if(count>0){
+					count--;
+					document.getElementById("movieDisplay").innerHTML = arr[count];
+				}
+			}
+		</script>
+
+		<nav>
+			<a href="/">Homepage;</a>
+			<h2></h2>
+			<a href="/about" >About Page</a>
+			<h2></h2>
+			<a href = "/fetchData">Fetch all Data</a>
+		</nav>
+	</div> 	
+	<div style ="margin-top: 500px;"></div>
+
+</body>
+</html>

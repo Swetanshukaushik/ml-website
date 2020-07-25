@@ -1,0 +1,98 @@
+body{
+	background-color:silver;
+	font-family: Arial;
+	font-size: 18px;
+	text-align: center;
+	/* Same as above*/
+	font: 18px Aerial;
+	line-height: 1em;
+	margin:200;
+}
+a{
+	text-decoration: none;
+	color: green;
+}
+a:hover{
+	color:#008CBA;
+}
+a:active{
+	color: red;
+}
+.container{
+	width: 90%; 
+	margin:auto;
+	text-align: center;
+}
+.thank{
+    color:brown;
+}
+.moviedisplay{
+    color:darkblue;
+}
+.container .h2{
+    margin: 150cm;
+    color: red;
+    size: 150px;
+}
+.button{
+	background-color: #008CBA; /* Green */
+    border: none;
+    color: white;
+    padding: 5px 12px ;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 5px 20px;
+    margin-bottom: 20;
+}
+.button2{
+	background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 5px 12px ;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 0px 20px;
+    display: inline;
+}
+.button2:hover{
+    background-color: darkgreen;
+}
+.button:hover{
+	background:blue;
+	color:white;
+}
+
+.box-2{
+	background-color:silver; 
+	color:black;
+	border : 10px solid black;
+	border-radius: 5CM;
+	border-spacing: 4cm;
+	border-width: 0.25cm;
+	padding:10px ;
+	margin:40px ;
+	text-align: center;
+}
+.container .h2{
+    padding:40px ;
+    color: red;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
